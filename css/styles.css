@@ -1,0 +1,15 @@
+body {
+  background-color: #185dcc;
+}
+
+h2 {
+  color:white;
+}
+
+a {
+  color:#ccd3e0;
+}
+
+#male-pop, #female-pop, #male-rnb, #female-rnb, #male-classical, #female-classical {
+  display: none;
+}
