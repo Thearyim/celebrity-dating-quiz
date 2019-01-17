@@ -12,11 +12,16 @@
 <div class="container">
   <div id="mainpage">
      <h1>Who is your match ?</h1>
-     <p>Please fill out your information to reveal your soulmates</p>
-
+     <h2>Please fill out your information to reveal your soulmates</h2>
+      <div>
+        <p>
        <form id="celebrity">
          <label for="age">Age</label>
          <input id="age" type="text">
+       </p>
+       </div>
+       <div>
+         <p>
          <label for="gender">What are you interested in?</label>
          <select id="gender">
            <option value="female">Female</option>
@@ -27,38 +32,16 @@
            <option value="rnb">RnB</option>
            <option value="classical">Classical</option>
          </select>
-
+       </p>
+       </div>
          <button type="submit" class="btn">Show me my soulmate!</button>
        </form>
    </div>
-
-
-   <div id="male-pop">
-     <img src="img/male-pop.jpeg" alt="Photo of male pop singer">
+   <div id="output">
+     <p id="result"></p>
+     <br/>
      <button type="button" class="goback"> Go back</button>
    </div>
-   <div id="female-pop">
-     <img src="img/female-pop.jpeg" alt="Photo of female pop singer">
-     <button type="button" class="goback"> Go back</button>
-   </div>
-   <div id="male-rnb">
-     <img src="img/male-rnb.jpeg" alt="Photo of male rnb singer">
-     <button type="button" class="goback"> Go back</button>
-   </div>
-   <div id="female-rnb">
-     <img src="img/female-rnb.jpeg" alt="Photo of female rnb singer">
-     <button type="button" class="goback"> Go back</button>
-   </div>
-   <div id="male-classical">
-     <img src="img/male-classical.jpeg" alt="Photo of male classical singer">
-     <button type="button" class="goback"> Go back</button>
-   </div>
-   <div id="female-classical">
-     <img src="img/female-classical.jpeg" alt="Photo of female classical singer">
-     <button type="button" id="goback"> Go back</button>
-   </div>
-
-</div>
-
+  </div>
 </body>
 </html>

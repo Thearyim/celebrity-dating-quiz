@@ -1,5 +1,14 @@
 body {
   background-color: #185dcc;
+  text-align: center;
+}
+
+#output {
+  display: none;
+}
+
+h1 {
+  text-shadow: 2px 2px;
 }
 
 h2 {

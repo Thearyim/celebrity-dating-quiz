@@ -8,25 +8,31 @@ $(document).ready(function(){
       alert("You are not old enough to do this quiz!!!!!");
     } else {
         if (gender === 'male' && music === 'pop') {
-          $("#male-pop").show();
+          $("p#result").after('<img src="img/male-pop.jpeg"/> <br/>')
+          $("#output").show();
           $("#mainpage").hide();
         } else if (gender === 'male' && music === 'rnb') {
-          $("#male-rnb").show();
+          $("p#result").after('<img src="img/male-rnb.jpeg"/> <br/>')
+          $("#output").show();
           $("#mainpage").hide();
         } else if (gender === 'male' && music === 'classical') {
-          $("#male-classical").show();
+          $("p#result").after('<img src="img/male-classical.jpeg"/> <br/>')
+          $("#output").show();
           $("#mainpage").hide();
         } else if (gender === 'female' && music === 'pop') {
-          $("#female-pop").show();
+          $("p#result").after('<img src="img/female-pop.jpeg"/> <br/>')
+          $("#output").show();
           $("#mainpage").hide();
         } else if(gender === 'female' && music === 'rnb') {
-          $("#female-rnb").show();
+          $("p#result").after('<img src="img/female-rnb.jpeg"/> <br/>')
+          $("#output").show();
           $("#mainpage").hide();
         } else if (gender === 'female' && music === 'classical') {
-          $("#female-classical").show();
+          $("p#result").after('<img src="img/female-classical.jpeg"/> <br/>')
+          $("#output").show();
           $("#mainpage").hide();
         } else {
-          alert("You dont have any soulmate, sorry.");
+          alert("You have no soulmate, sorry.");
         }
       }
     event.preventDefault();
@@ -34,6 +40,7 @@ $(document).ready(function(){
 
   $(".goback").click(function(){
     $("#mainpage").show();
-
+    //$("#output").hide();
+    location.reload();
   });
 });
